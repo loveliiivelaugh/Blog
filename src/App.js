@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import { Amplify } from "aws-amplify";
-import amplifyconfig from './amplify-build-config.json';
+// import amplifyconfig from './amplify-build-config.json';
 
-Amplify.configure(amplifyconfig);
+// Amplify.configure(amplifyconfig);
 
 function App() {
   return (
