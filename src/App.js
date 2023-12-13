@@ -1,9 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
 import { Amplify } from "aws-amplify";
-import Dashboard from './components/dashboard/Dashboard';
-import LineCharts from './components/LineCharts';
-import { Box } from '@mui/material';
+
+import Blog from './components/blog/Blog';
+
+import './App.css';
 
 Amplify.configure({
   "profile": "default",
@@ -11,21 +10,7 @@ Amplify.configure({
 });
 
 function App() {
-  return (
-    <Dashboard>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Blog Incoming
-          </p>
-          <Box sx={{ width: 400, height: 400 }}>
-            <LineCharts />
-          </Box>
-        </header>
-      </div>
-    </Dashboard>
-  );
+  return <Blog />
 }
 
 export default App;
